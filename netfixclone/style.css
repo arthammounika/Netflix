@@ -1,0 +1,47 @@
+header {
+  background-color: #3498db;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  font-size: 24px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav ul li {
+  display: inline;
+  margin-left: 10px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+}
+header nav ul li a:hover {
+  color: #2ecc71;
+}
+
+.submit-button {
+  padding: 10px;
+  margin: 10px;
+  background-color: #2ecc71;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  cursor: pointer;
+}
+.submit-button:hover {
+  background-color: #25a25a;
+}
+
+.submit-button {
+  width: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */

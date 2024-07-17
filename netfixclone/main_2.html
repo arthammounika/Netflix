@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Netflix Clone</title>
+        <link rel="stylesheet" href="styles_2.css"> 
+    </head>
+
+    <body>
+        <!-- all the content should be inside this video -->
+        <div class="video-background">
+            <!-- bringing the video -->
+            <video autoplay loop muted playsinline>
+                <source src="Kingdom2.mp4" type="video/mp4">
+            </video>
+
+            <!-- all things above the video -->
+            <div class="content">
+                <img src="wall1.jpeg" alt="movie title image" class="title-img">
+
+                <!-- <h1>Welcome to Netflix</h1> -->
+                <p>Several generations in the future following Caesar's reign, apes are now the dominant species and live harmoniously while humans have been reduced to living in the shadows.</p>
+                
+                <div class="buttons">
+                    <button class="btn play">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24px" height="24px">
+                            <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                        Play
+                    </button>
+                    <button class="btn more-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 50 50">
+                            <path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 25 11 A 3 3 0 0 0 22 14 A 3 3 0 0 0 25 17 A 3 3 0 0 0 28 14 A 3 3 0 0 0 25 11 z M 21 21 L 21 23 L 22 23 L 23 23 L 23 36 L 22 36 L 21 36 L 21 38 L 22 38 L 23 38 L 27 38 L 28 38 L 29 38 L 29 36 L 28 36 L 27 36 L 27 21 L 26 21 L 22 21 L 21 21 z"></path>
+                            </svg>
+                        More Info
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <!--------------- NAV BAR DIV --------------->
+        <div class="navbar">
+
+            <!--------------- LEFT ALIGNMENT IN NAV BAR --------------->
+            <div class="left-nav"> 
+                <!--------------- NAV BAR - LOGO --------------->
+                <a href="/browse" class="logo">
+                    <img src="Logonetflix.png" alt="Netflix Logo">
+                </a>
+            
+                <!--------------- NAV BAR - MENU --------------->
+                <ul class="navigation">
+                    <li><a href="/browse">Home</a></li>
+                    <li><a href="/browse/genre/83">TV Shows</a></li>
+                    <li><a href="/browse/genre/34399">Movies</a></li>
+                    <li><a href="/latest">New & Popular</a></li>
+                    <li><a href="/browse/my-list">My List</a></li>
+                    <li><a href="/browse/original-audio">Browse by Languages</a></li>
+                </ul>
+            </div>
+
+            <!--------------- RIGHT ALIGNMENT IN NAV BAR --------------->
+            <div class="right-nav"> 
+                <button class="icon-search" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24">
+                        <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+                    </svg>
+                </button>
+
+                <a href="/Kids">Children</a>
+
+                <button class="icon-bell" aria-label="Notifications">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24">
+                        <path d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v25.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm0 96c61.9 0 112 50.1 112 112v25.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V208c0-61.9 50.1-112 112-112zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"/>
+                    </svg>
+                    <span class="notification-count">3</span>
+                </button>
+
+                <div class="profile">
+                    <img src="user.png" alt="User Profile" class="profile-pic">
+                    <div class="dropdown">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li class="separator"></li>
+                            <li><a href="#">Sign Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+</html>
